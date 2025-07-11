@@ -174,7 +174,7 @@
   },
   "build": {
     "productName": "electron-react-demo",
-    "appId": "com.min.electron-react-demo",
+    "appId": "com.Minyym.electron-react-demo",
     "asar": true,
     "afterSign": ".erb/scripts/notarize.js",
     "asarUnpack": "**\\*.{node,dll}",
