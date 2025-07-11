@@ -59,19 +59,19 @@ jobs:
         run: |
           if [ "${{ matrix.os }}" = "macos-latest" ]; then
             if [ -n "$CSC_LINK" ] && [ -n "$APPLE_ID" ]; then
-              npm exec electron-builder -- --publish always --mac
+              npm exec electron-builder -- --mac
             else
               echo "No Apple certificates found, building without signing..."
-              npm exec electron-builder -- --publish always --mac --config.mac.identity=null
+              npm exec electron-builder -- --mac --config.mac.identity=null
             fi
           elif [ "${{ matrix.os }}" = "ubuntu-latest" ]; then
-            npm exec electron-builder -- --publish always --linux
+            npm exec electron-builder -- --linux
           elif [ "${{ matrix.os }}" = "windows-latest" ]; then
             if [ -n "$WIN_CSC_LINK" ]; then
-              npm exec electron-builder -- --publish always --win
+              npm exec electron-builder -- --win
             else
               echo "No Windows certificates found, building without signing..."
-              npm exec electron-builder -- --publish always --win --config.win.certificateFile=null --config.win.signAndEditExecutable=false
+              npm exec electron-builder -- --win --config.win.certificateFile=null --config.win.signAndEditExecutable=false
             fi
           fi
         shell: bash
