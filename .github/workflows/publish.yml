@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN  }}
+          token: ${{ secrets.ELECTRON_GITHUB_TOKEN  }}
 
       - name: Install Node and NPM
         uses: actions/setup-node@v3
@@ -47,7 +47,7 @@ jobs:
       - name: Build and Publish
         env:
           # 使用GITHUB_TOKEN而不是GH_TOKEN
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+          GITHUB_TOKEN: ${{ secrets.ELECTRON_GITHUB_TOKEN  }}
           VERSION: ${{ steps.version.outputs.version }}
           # macOS signing (optional)
           APPLE_ID: ${{ secrets.APPLE_ID }}
