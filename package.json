@@ -255,8 +255,8 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "min",
-      "repo": "electron-react-demo",
+      "owner": "Minyym",
+      "repo": "electron-react-desk",
       "private": false,
       "releaseType": "release",
       "publishAutoUpdate": true
