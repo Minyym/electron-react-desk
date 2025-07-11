@@ -173,7 +173,7 @@
     "webpack-merge": "^6.0.1"
   },
   "build": {
-    "productName": "ElectronReactDemo",
+    "productName": "electron-react-demo",
     "appId": "com.min.electron-react-demo",
     "asar": true,
     "afterSign": ".erb/scripts/notarize.js",
@@ -220,9 +220,12 @@
     },
     "linux": {
       "target": [
-        "AppImage"
+        "AppImage",
+        "deb"
       ],
-      "category": "Development"
+      "category": "Development",
+      "executableName": "electron-react-demo",
+      "artifactName": "${productName}-${version}.${ext}"
     },
     "directories": {
       "app": "release/app",
