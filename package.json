@@ -12,23 +12,23 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/min/electron-react-demo#readme",
+  "homepage": "https://github.com/Minyym/electron-react-desk#readme",
   "bugs": {
-    "url": "https://github.com/min/electron-react-demo/issues"
+    "url": "https://github.com/Minyym/electron-react-desk/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/min/electron-react-demo.git"
+    "url": "git+https://github.com/Minyym/electron-react-desk.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Min"
+    "name": "Minyym"
   },
   "contributors": [
     {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
+      "name": "Minyym",
+      "email": "minyym@gmail.com",
+      "url": "https://github.com/Minyym"
     }
   ],
   "main": "./.erb/dll/main.bundle.dev.js",
@@ -240,9 +240,6 @@
       "releaseType": "release",
       "publishAutoUpdate": true
     }
-  },
-  "collective": {
-    "url": "https://opencollective.com/electron-react-boilerplate-594"
   },
   "devEngines": {
     "runtime": {
